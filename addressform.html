@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="productstyle.css">
+		<script src="js/jquery-3.6.0.js"></script>
+	<title>Address</title>
+</head>
+<body>
+<div id="container">
+			<!-- Header -->
+	<div class="header">
+		<div class="header-start">
+			<div id="header-logo">
+			<a href="#" id="header-logo-link">
+				<span id="header-logo-image"></span>
+				<span id="header-logo-text">.in</span>
+			</a>
+			</div>
+			<a href="#" id="header-location">
+				<span id="header-location-symbol"></span>
+				<div id="header-location-line">
+					<span id="header-location-line1">
+	                   Deliver to Vaibhav
+	                </span>
+					<span id="header-location-line2">
+	                   Ghaziabad 201001
+	                </span>
+				</div>
+			</a>
+		</div>
+		
+		<div class="header-middle">
+			
+			<div class="search-box">
+				<div class="search-box-left">
+					<select>
+						<option>All Categories</option>
+						<option>Deals</option>
+						<option>Alexa Skills</option>
+						<option>Amazon Devices</option>
+						<option>More Stores</option>
+						<option>Amazon Fashion</option>
+						<option>Amazon Fresh</option>
+
+					</select>
+				</div>
+					<input type="text" name="search" class="search-box-input">
+				<div class="search-box-right">
+					<span id="search-icon"></span>
+				</div>
+			</div>
+			
+		</div>
+		<div class="header-end">
+			<a href="#" id="header-flag">
+				<span id="header-flag-img"></span>
+				<span id="header-flag-arrow"></span>
+			</a>
+			<a href="#" id="header-account">
+				<div id="header-account-line1">Hello, vaibhav</div>
+				<span id="header-account-line2">
+					<span>Account & Lists</span>
+					<span id="header-flag-arrow"></span>
+				</span>
+			</a>
+			<a href="#" id="header-account">
+				<div id="header-account-line1">Returns</div>
+				<span id="header-account-line2">
+					<span>& Orders</span>
+				</span>
+			</a>
+			<a href="#" id="header-cart">
+				<div id="header-cart-line1">
+					<span id="header-cart-img"></span>
+					<span id="header-cart-count">0</span>
+				</div>
+				<span id="header-cart-line2">Cart</span>
+			</a>
+		</div>	
+
+	</div>
+	<!-- Nav BAR -->
+	<div id="main-nav">
+			<a href="#" id="nav-first-link">
+				<span id="nav-icon"></span>
+				<span id="nav-first-link-text">All</span></a>
+			<a href="#">Fresh</a>
+			<a href="#">Amazon Pay</a>
+			<a href="#">Best Sellers</a>
+			<a href="#">Mobiles</a>
+			<a href="#">Prime</a>
+			<a href="#">Buy Again</a>
+			<a href="#">Customer Service</a>
+			<a href="#">vaibhav's Amazon.in</a>
+			<a href="#">Pantry</a>
+			<a href="#">Today's Deals</a>
+			<a href="#">New Releases</a>
+			<a href="#">Electronics</a>
+			<a href="#">Gift Cards</a>
+			<a href="#">Fashion</a>
+			<a href="#">Computer</a>
+			<a href="#">Sell</a>
+	</div>
+	<div class="form-container flex-column flex-align-center p-10">
+		<form name="myform" class="w-100 p-10" onsubmit="return validateForm()">
+			<div class="form-content flex-column ">
+					<span class="pb-5 s-18"><h2>Add a new address</h2></span>
+					<div class="flex-row flex-align-center">
+						<img src="productimage/amazon_hub_pin.svg" width="20px" class="mr-5">		
+						<span class="pb-5"><a href="#">Or find an Amazon pickup location near you ></a></span>
+					</div>		
+			</div>	
+			<div class="form-content flex-column">
+				<span class="pb-5"><b>Country/Region</b></span>
+				<select  class="form-input background-color-grey"><option>India</option></select>
+			</div>
+			<div class="form-content flex-column s-14">
+				<span class="pb-5"><b>Full name</b></span>
+				<input type="text" name="fullname" class="form-input" id="fullname">
+				<span class="s-14 price-color error-msg" id="fnameerror" ></span>
+			</div>
+			<div class="form-content flex-column">
+				<span class="pb-5"><b>Mobile number</b></span>
+				<input type="text" name="mobileno" class="form-input" id="mobileno">
+				<span class="s-14 price-color error-msg" id="mobilenoerror"></span>
+			</div>
+			<div class="form-content flex-column">
+				<span class="pb-5"><b>Pincode</b></span>
+				<input type="text" name="pincode" class="form-input" id="pincode" placeholder="6 digits [0-9] PIN code">
+				<span class="s-14 price-color error-msg" id="pincodeerror"></span>
+			</div>
+			<div class="form-content flex-column">
+				<span class="pb-5"><b>Flat, House no., Building, Company, Apartment</b></span>
+				<input type="text" name="flatno"  class="form-input" id="flatno">
+				<span class="s-14 price-color error-msg" id="flatnoerror"></span>
+			</div>
+			<div class="form-content flex-column">
+				<span class="pb-5"><b>Area, Street, Sector, Village</b></span>
+				<input type="text" name="area" class="form-input">
+			</div>
+			<div class="form-content flex-column">
+				<span class="pb-5"><b>Landmark</b></span>
+				<input type="text" name="area" class="form-input" placeholder="E.g. near apollo hospital">
+			</div>
+			<div class="form-content flex-row flex-justify-spacebetween">
+				<div class="form-content flex-column w-100 mr-5">
+					<span class="pb-5"><b>Town/City</b></span>
+					<input type="text" name="town" class="form-input" id="town">
+					<span class="s-14 price-color error-msg"></span>
+				</div>
+				<div class="form-content flex-column w-100">
+					<span class="pb-5"><b>State</b></span>
+					<select  class="form-input background-color-grey"><option>Choose a state</option></select>
+					<span class="s-14 price-color error-msg"></span>
+				</div>
+			</div>
+			<div class="form-content flex-row ">
+					<input type="checkbox" name="add" class="mr-5">
+					<span>Make this my default address</span>		
+			</div>
+			<div class="form-content flex-column ">
+					<span class="pb-5 s-18"><h3>Add delivery instructions</h3></span>		
+					<span class="pb-5">Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned.</span>		
+					<div class="form-content flex-column">
+						<span class="pb-5"><b>Address Type</b></span>
+						<select  class="form-input background-color-grey"><option>Select an Address Type</option></select>
+					</div>	
+			</div>
+			<div class="form-content">
+				<input type="submit" name="submit" value="Add address" class="form-submit" id="submit">
+			</div>
+		</form>
+	</div>
+</div>
+
+<script type="text/javascript">
+	
+	$(document).ready(function(){
+
+		var fnameerror = true;
+		var mobilenoerror = true;
+		var pincodeerror = true;
+		var flatnoerror = true;
+
+		$("#fnameerror").hide();
+		$("#mobilenoerror").hide();
+		$("#pincodeerror").hide();
+		$("#flatnoerror").hide();
+
+		$("#fullname").keyup(function(){
+			checkFullname();
+		});
+		$("#mobileno").keyup(function(){
+			checkMobileno();
+		});
+		$("#pincode").keyup(function(){
+			checkPincode();
+		});
+		$("#flatno").keyup(function(){
+			checkFlatno();
+		});
+
+		function checkFullname(){
+					var fullnameValue = $("#fullname").val();
+					console.log(fullnameValue);
+					if(fullnameValue.length == ''){
+						$("#fnameerror").show();
+						$("#fnameerror").html("! Please enter a name.");
+						$("#fullname").focus();
+						fnameerror=false;
+						return false;
+					}
+					else{
+						$("#fnameerror").hide();
+					}
+		}
+		function checkMobileno(){
+					var mobilenoValue = $("#mobileno").val();
+					console.log(mobilenoValue);
+					if(mobilenoValue.length == ''){
+						$("#mobilenoerror").show();
+						$("#mobilenoerror").html("! Please enter a phone number so we can call if there are any issues with delivery.");
+						$("#mobileno").focus();
+						mobilenoerror = false;
+						return false;
+					}
+					else{
+						$("#mobilenoerror").hide();
+					}
+		}
+		function checkPincode(){
+					var pincodeValue = $("#pincode").val();
+					console.log(pincodeValue);
+					if(pincodeValue.length == ''){
+						$("#pincodeerror").show();
+						$("#pincodeerror").html("! Please enter a ZIP or postal code.");
+						$("#pincode").focus();
+
+						pincodeerror = false;
+						return false;
+					}
+					else{
+						$("#pincodeerror").hide();
+					}
+		}
+		function checkFlatno(){
+					var flatnoValue = $("#flatno").val();
+					console.log(flatnoValue);
+					if(flatnoValue.length == ''){
+						$("#flatnoerror").show();
+						$("#flatnoerror").html("! Please enter an address.");
+						$("#flatno").focus();
+
+
+						flatnoerror = false;
+						return false;
+					}
+					else{
+						$("#flatnoerror").hide();
+					}
+		}
+
+	$("#submit").click(function(){
+		fnameerror = true;
+		mobilenoerror = true;
+		pincodeerror = true;
+		flatnoerror = true;
+
+		checkFullname();
+		checkMobileno();
+		checkPincode();
+		checkFlatno();
+
+		if(fnameerror == true && mobilenoerror == true && pincodeerror == true && flatnoerror == true){
+			return true;
+		}
+		else{
+			return false;
+		}
+	});
+
+	});
+
+</script>
+
+<!-- <script>
+	var errormsg = document.getElementsByClassName('error-msg');
+		var fullname = document.forms['myform']['fullname'];
+		var mobileno = document.forms['myform']['mobileno'];
+		var pincode = document.forms['myform']['pincode'];
+		var flatno = document.forms['myform']['flatno'];
+		var town = document.forms['myform']['town'];
+	
+	// 	var fname = document.getElementById('fullname');
+	// 	var mno = document.getElementById('mobileno');
+	// 	var pcode = document.getElementById('pincode');
+	// 	var fno = document.getElementById('flatno');
+	// 	var towns = document.getElementById('town');
+	// function validate(){
+	// 	console.log("okk");
+	// 	return false;
+	// }
+
+	fullname.addEventListener("keyup",function(event){
+		if(event.target.value.length > 0){
+			fullname.classList.remove("error");
+			errormsg[0].innerHTML='';
+		}
+		else{
+			fullname.classList.add("error");
+			errormsg[0].innerHTML='! Please enter a name.';
+		}
+	});
+	mobileno.addEventListener("keyup",function(event){
+		if(event.target.value.length > 0){
+			mobileno.classList.remove("error");
+			errormsg[1].innerHTML='';
+		}
+		else{
+			mobileno.classList.add("error");
+			errormsg[1].innerHTML='! Please enter a phone number so we can call if there are any issues with delivery.';
+		}
+	});
+	pincode.addEventListener("keyup",function(event){
+		if(event.target.value.length > 0){
+			pincode.classList.remove("error");
+			errormsg[2].innerHTML='';
+		}
+		else{
+			pincode.classList.add("error");
+			errormsg[2].innerHTML='! Please enter a ZIP or postal code.';
+		}
+	});
+	flatno.addEventListener("keyup",function(event){
+		if(event.target.value.length > 0){
+			flatno.classList.remove("error");
+			errormsg[3].innerHTML='';
+		}
+		else{
+			flatno.classList.add("error");
+			errormsg[3].innerHTML='! Please enter an address.';
+		}
+	});
+	town.addEventListener("keyup",function(event){
+		if(event.target.value.length > 0){
+			town.classList.remove("error");
+			errormsg[4].innerHTML='';
+		}
+		else{
+			town.classList.add("error");
+			errormsg[4].innerHTML='! Please enter a city name.';
+		}
+	});
+
+	function validateForm(){
+		
+		
+		if(fullname.value == ''){
+			fullname.classList.add("error");
+			errormsg[0].innerHTML='! Please enter a name.';
+			return false;
+		}
+		else if(mobileno.value == ''){
+						mobileno.classList.add("error");
+			errormsg[1].innerHTML='! Please enter a phone number so we can call if there are any issues with delivery.';
+			return false;
+		}
+		else if(pincode.value == ''){
+						pincode.classList.add("error");
+			errormsg[2].innerHTML='! Please enter a ZIP or postal code.';
+			return false;
+		}
+		else if(flatno.value == ''){
+						flatno.classList.add("error");
+			errormsg[3].innerHTML='! Please enter an address.';
+			return false;
+		}
+		else if(town.value == ''){
+						town.classList.add("error");
+			errormsg[4].innerHTML='! Please enter a city name.';
+			return false;
+		}
+		else{
+			return true;
+		}
+
+	}
+	
+</script> -->
+
+</body>
+</html>

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="productstyle.css">
+		<script src="js/jquery-3.6.0.js"></script>
+	<title>Product</title>
+</head>
+<body>
+<div id="container">
+				<!-- Header -->
+	<div class="header">
+		<div class="header-start">
+			<div id="header-logo">
+			<a href="#" id="header-logo-link">
+				<span id="header-logo-image"></span>
+				<span id="header-logo-text">.in</span>
+			</a>
+			</div>
+			<a href="#" id="header-location">
+				<span id="header-location-symbol"></span>
+				<div id="header-location-line">
+					<span id="header-location-line1">
+	                   Deliver to Vaibhav
+	                </span>
+					<span id="header-location-line2">
+	                   Ghaziabad 201001
+	                </span>
+				</div>
+			</a>
+		</div>
+		
+		<div class="header-middle">
+			
+			<div class="search-box">
+				<div class="search-box-left">
+					<select>
+						<option>All Categories</option>
+						<option>Deals</option>
+						<option>Alexa Skills</option>
+						<option>Amazon Devices</option>
+						<option>More Stores</option>
+						<option>Amazon Fashion</option>
+						<option>Amazon Fresh</option>
+
+					</select>
+				</div>
+					<input type="text" name="search" class="search-box-input">
+				<div class="search-box-right">
+					<span id="search-icon"></span>
+				</div>
+			</div>
+			
+		</div>
+		<div class="header-end">
+			<a href="#" id="header-flag">
+				<span id="header-flag-img"></span>
+				<span id="header-flag-arrow"></span>
+			</a>
+			<a href="#" id="header-account" >
+				<div id="header-account-line1">Hello, vaibhav</div>
+				<span id="header-account-line2">
+					<span>Account & Lists</span>
+					<span id="header-flag-arrow"></span>
+				</span>
+			</a>
+			<a href="#" id="header-account">
+				<div id="header-account-line1">Returns</div>
+				<span id="header-account-line2">
+					<span>& Orders</span>
+				</span>
+			</a>
+			<a href="#" id="header-cart">
+				<div id="header-cart-line1">
+					<span id="header-cart-img"></span>
+					<span id="header-cart-count">0</span>
+				</div>
+				<span id="header-cart-line2">Cart</span>
+			</a>
+		</div>	
+
+	</div>
+	<!-- Nav BAR -->
+	<div id="main-nav">
+			<a href="#" id="nav-first-link">
+				<span id="nav-icon"></span>
+				<span id="nav-first-link-text">All</span></a>
+			<a href="#">Fresh</a>
+			<a href="#">Amazon Pay</a>
+			<a href="#">Best Sellers</a>
+			<a href="#">Mobiles</a>
+			<a href="#">Prime</a>
+			<a href="#">Buy Again</a>
+			<a href="#">Customer Service</a>
+			<a href="#">vaibhav's Amazon.in</a>
+			<a href="#">Pantry</a>
+			<a href="#">Today's Deals</a>
+			<a href="#">New Releases</a>
+			<a href="#">Electronics</a>
+			<a href="#">Gift Cards</a>
+			<a href="#">Fashion</a>
+			<a href="#">Computer</a>
+			<a href="#">Sell</a>
+	</div>
+	<div class="product-container">
+		<div id="product-container-left">
+			<div class="flex-row w-100" style="position: sticky;top: 0;">
+				<div class="flex-column p-10" id="allproduct">
+					<img src="productimage/productmobile.jpg" class="small-image mt-10 border-radius-3 p-5" >
+					<!-- onmouseover="displayCurrent('productimage/productmobile.jpg')"> -->
+					<img src="productimage/productmobile2.jpg" class="small-image mt-10 border-radius-3 p-5">
+					<!-- onmouseover="displayCurrent('productimage/productmobile2.jpg')"> -->
+					<img src="productimage/productmobile3.jpg" class="small-image mt-10 border-radius-3 p-5">
+					<!-- onmouseover="displayCurrent('productimage/productmobile3.jpg')"> -->
+					<img src="productimage/productmobile4.jpg" class="small-image mt-10 border-radius-3 p-5">
+					<!-- onmouseover="displayCurrent('productimage/productmobile4.jpg')"> -->
+					<img src="productimage/productmobile5.jpg" class="small-image mt-10 border-radius-3 p-5">
+					<!-- onmouseover="displayCurrent('productimage/productmobile5.jpg')"> -->
+				</div>
+				<div class="flex-row flex-justify-center">
+					<img src="productimage/productmobile.jpg" class="w-60" id="currentproduct">
+					<!-- onmouseover="increase()" onmouseout="decrease()"> -->
+				</div>
+			</div>
+		</div>
+		<div id="product-container-middle">
+			<div class="product-section">
+				<span class="product-name">OnePlus 7 Pro (Mirror Grey, 8GB RAM, Super AMOLED Display, 256GB Storage, 4000mAH Battery)</span>
+				<span class="link s-14"><a href="#">Visit the OnePlus Store</a></span>
+				<div class="flex-row flex-wrap">
+					<span class="rating-logo"></span>
+					<span class="link s-14"><a href="#">1,555 ratings</a></span>
+					<span class="link s-14"><a href="#">122 answered questions</a></span>
+				</div>
+			</div>
+			<hr>
+			<div class="product-section">
+				<div class="flex-row flex-wrap">
+					<span>Price:</span>
+					<div class="flex-column">
+						<span class="s-18 price-color">₹ 52,999.00</span>
+						<span class="s-14">Inclusive of all taxes</span>
+					</div>
+				</div>
+
+				<div class="flex-row flex-wrap">
+					<span class="link s-14"><a href="#">FREE delivery:</a></span>
+					<span class="s-14"><b>Monday, July 12</b></span>
+					<span class="link s-14"><a href="#">Details</a></span>
+				</div>
+				<div class="flex-row flex-wrap">
+					<span class="s-14"><b>EMI</b> starts at ₹2,495. No Cost EMI available</span>
+					<span class="link s-14"><a href="#" class="mr-5">EMI options</a> <i class="arrow down"></i></span>
+				</div>
+				<div class="flex-column">
+					<div class="section-border">
+						<div class="flex-row flex-wrap flex-align-center">
+							<span class="salelogo"></span>
+							<span class="s-14"><span class="price-color"><b>Save Extra</b></span> with 5 offers</span>
+						</div>
+						<hr>
+						<div class="flex-row flex-wrap p-10">
+							<span class="s-14"><span class="price-color"><b>Bank Offer:</b></span> Get Rs. 500 Amazon Gift Card on a minimum purchase of Rs 10000 with HDFC Bank Debit Card EMI transaction
+							<span class="link s-14"><a href="#">Details</a></span></span>
+						</div>
+						<hr>
+						<div class="flex-row flex-wrap p-10">
+							<span class="s-14"><span class="price-color"><b>No Cost EMI:</b></span> Avail No Cost EMI on select cards for orders above ₹3000
+							<span class="link s-14"><a href="#">Details</a></span></span>
+						</div>
+						<div id="more" class="more">
+							<hr>
+							<div class="flex-row flex-wrap flex-align-center">
+							<span class="salelogo"></span>
+							<span class="s-14"><span class="price-color"><b>Save Extra</b></span> with 5 offers</span>
+							</div>
+							<hr>
+							<div class="flex-row flex-wrap p-10">
+								<span class="s-14"><span class="price-color"><b>Bank Offer:</b></span> Get Rs. 500 Amazon Gift Card on a minimum purchase of Rs 10000 with HDFC Bank Debit Card EMI transaction
+								<span class="link s-14"><a href="#">Details</a></span></span>
+							</div>
+							<hr>
+							<div class="flex-row flex-wrap p-10">
+								<span class="s-14"><span class="price-color"><b>No Cost EMI:</b></span> Avail No Cost EMI on select cards for orders above ₹3000
+								<span class="link s-14"><a href="#">Details</a></span></span>
+							</div>
+						</div>
+						<hr>
+						<div class="flex-row flex-wrap p-10">
+							<span class="link s-14" id="seemore"><i class="arrow down mr-5" id="seearrow"></i> <a href="#" id="seemsg">See 3 more</a></span></span>
+						</div>
+					</div>
+				</div>
+				<div class="flex-row flex-wrap ">
+					<div class="flex-column flex-align-center mr-5">
+						<img src="productimage/replacementicon.png" class="small-image">
+						<span class="link s-12 text-align-center"><a href="#">7 Days Replacement</a></span>
+					</div>
+					<div class="flex-column flex-align-center mr-5">
+						<img src="productimage/deliveryicon.png" class="small-image">
+						<span class="link s-12 text-align-center"><a href="#">Amazon Delivered</a></span>
+					</div>
+					<div class="flex-column flex-align-center mr-5">
+						<img src="productimage/warrentyicon.png" class="small-image">
+						<span class="link s-12 text-align-center"><a href="#">1 Year Warranty</a></span>
+					</div>
+					<div class="flex-column flex-align-center mr-5">
+						<img src="productimage/nocontactdeliveryicon.png" class="small-image">
+						<span class="link s-12 text-align-center"><a href="#">No-Contact Delivery</a></span>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="product-section">
+				<div class="flex-row flex-wrap"><span class="stock-color">In stock.</span></div>
+				<div class="flex-row flex-wrap"><span class="s-14">Sold by <span><a href="#">Appario Retail Private Ltd</a></span> and <span><a href="#">Fulfilled by Amazon.</a></span></span></div>
+				<div class="flex-row flex-wrap s-14"><span>Size name: <b>8 GB RAM, 256 GB Storage</b></span></div>
+				<div class="flex-row flex-wrap s-14"><span>Colour: <b>Mirror Grey</b></span></div>
+				<div class="flex-row flex-wrap s-14">
+					<table>
+						<tr><td class="w-50 ptrb-5"><b>Model Name</b></td><td>OnePlus 7 Pro</td></tr>
+						<tr><td class="w-50 ptrb-5"><b>Brand</b></td><td>OnePlus</td></tr>
+						<tr><td class="w-50 ptrb-5"><b>Form Factor</b></td><td>Touchscreen Phone</td></tr>
+						<tr><td class="w-50 ptrb-5"><b>Memory Storage Capacity</b></td><td>8 GB</td></tr>
+						<tr><td class="w-50 ptrb-5"><b>OS</b></td><td>Android 9.0</td></tr>
+					</table>
+				</div>
+			</div>
+			<hr>
+			<div class="product-section">
+				<h4>About this item</h4>
+				<div class="flex-column s-14 ml-15">
+					<ul>
+						<li>48MP rear camera | 8MP tele + 16MP ultrawide front camera</li>
+						<li>16.9 centimeters (6.67-inch) multi-touch capacitive touchscreen with 3120 x 1440 pixels resolution</li>
+						<li>Memory, Storage and SIM: 8GB RAM | 256GB internal memory | Dual SIM dual-standby (4G+4G)</li>
+						<li>Android Oxygen operating system with 2.84GHz Snapdragon 855 octa core processor</li>
+						<li>4000mAH lithium-ion battery</li>
+						<li>1 year manufacturer warranty for device and 6 months manufacturer warranty for in-box accessories including batteries from the date of purchase</li>
+						<li>Box also includes: Power Adapter, Type-C Cable (Support USB 2.0), Quick Start Guide, Welcome Letter, Safety Information and Warranty Card, Logo Sticker, Case, Screen Protector (pre-applied) and SIM Tray Ejector</li>
+
+					</ul>
+				</div>
+				<span class="s-14 pl-5"><a href="#"><span class="price-color"><b>›</b></span> See more product details</a></span>
+			</div>
+			<hr>
+			<div class="product-section pt-5">
+				<span class="s-14 pl-5 pt-5"><a href="#">Compare with similar items</a></span>		
+				<span class="s-14 pl-5 pt-5"><a href="#">Report incorrect product information.</a></span>
+			</div>
+			<!-- <hr> -->
+		</div>
+		<div id="product-container-right" style="flex-basis: 300px;">
+			<div class="flex-column">
+				<div class="section-border m-15">
+					<div class="flex-row flex-align-center background-color-grey p-10">
+						<input type="radio" name="exchange" class="mr-5">
+						<div class="flex-column s-14">
+							<span><b>With Exchange</b></span>
+							<span class="price-color">Up to  ₹11,100.00 off</span>
+						</div>
+					</div>
+					<hr>
+					<div class="flex-row flex-align-center p-10">
+						<input type="radio" name="exchange" class="mr-5">
+						<div class="flex-column s-14">
+							<span><b>Without Exchange</b></span>
+							<span class="price-color"><b>₹52,999.00</b></span>
+						</div>
+					</div>
+					<div class="flex-row flex-align-center p-10">
+						<input type="checkbox" name="add" class="mr-5">
+						<div class="flex-column s-14">
+							<span><a href="#">OnePlus Red Cable Care (with 120GB Cloud Storage & 12-Month Extended Warranty) (Email Delivery) for <span class="price-color">₹ 1,499.00</span></a></span>
+						</div>
+					</div>
+					<div class="flex-row flex-align-center p-10">
+						<input type="checkbox" name="add" class="mr-5">
+						<div class="flex-column s-14">
+							<span><a href="#">Acko 1-year Screen Protection Plan for <span class="price-color">₹ 1,899.00</span></a></span>
+						</div>
+					</div>
+					<div class="flex-row flex-align-center p-10">
+						<span class="s-14">Quantity: </span>
+						<div class="flex-column s-14">
+						<div class="s-14 pl-5"><select class="border-radius-3">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+							<option>6</option>
+							<option>7</option>
+							<option>8</option>
+							<option>9</option>
+							<option>10</option>
+						</select></div>
+						</div>
+					</div>
+					<div class="flex-row flex-align-center p-5 flex-justify-center ">
+						<button class="w-60 p-5 border-radius-10 background-color-yellow border-none">Add to Cart</button>
+					</div>
+					<div class="flex-row flex-align-center p-5 flex-justify-center">
+						<button class="w-60 p-5 border-radius-10 background-color-orange border-none">Buy Now</button>
+					</div>
+					<div class="flex-row flex-align-center p-10">
+						<span class="secureicon"></span>
+						<div class="flex-column s-14">
+							<span><a href="#">Secure transaction</a></span>
+						</div>
+					</div>
+					<div class="flex-row flex-align-center p-10">
+						<input type="checkbox" name="addgift" class="mr-5">
+						<div class="flex-column s-14">
+							<span>Add gift options</span>
+						</div>
+					</div>
+					<div class="flex-row flex-align-center p-10">
+						<span class="locationicon"></span>
+						<div class="flex-column s-12">
+							<span><a href="#">Delivery to Vaibhav - Ghaziabad 201001</a></span>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<hr>
+	<div class="product-container flex-justify-start p-10">
+		<span class="price-color "><h2>Compare with similar items</h2></span>
+	</div>
+	<hr>
+	<div class="product-container">
+		<table style="overflow-x: auto;">
+			<tr>
+				<td></td>
+				<td>
+					<div class="flex-column flex-align-center text-align-start flex-justify-spacebetween ptrb-5">
+							<img src="productimage/productmobile.jpg" style="height: 160px;">
+							<span class="s-14 p-10"><b>You are viewing:</b> OnePlus 7 Pro (Mirror Grey, 8GB RAM, Super AMOLED Display, 256GB Storage, 4000mAH Battery)</span>
+					</div>
+				</td>
+				<td>
+					<div class="flex-column flex-align-center text-align-start flex-justify-spacebetween ptrb-5">
+							<img src="productimage/mobile2.jpg" style="height: 160px;">
+							<span class="s-14 p-10"><a href="#">OnePlus 9R 5G (Lake Blue, 8GB RAM, 128GB Storage)</a></span>
+					</div>
+				</td>
+				<td>
+					<div class="flex-column flex-align-center text-align-start flex-justify-spacebetween ptrb-5">
+							<img src="productimage/mobile3.jpg" style="height: 160px;">
+							<span class="s-14 p-10"><a href="#">Redmi Note 10 Pro (Vintage Bronze, 6GB RAM, 128GB Storage) -120Hz Super Amoled Display | 64MP Camera with 5MP Super Tele-Macro, Normal</a></span>
+					</div>
+				</td>
+				<td>
+					<div class="flex-column flex-align-center text-align-start flex-justify-spacebetween ptrb-5">
+							<img src="productimage/mobile4.jpg" style="height: 160px;">
+							<span class="s-14 p-10"><a href="#">OnePlus 8T 5G (Aquamarine Green, 12GB RAM, 256GB Storage)</a></span>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class="p-10">
+					<span class="price-color ptrb-5"><h2>₹ 52,999.00</h2 ></span> 
+					<div class="flex-row w-100  ptrb-5">
+						<span class="rating-logo"></span>
+						<span class="link s-14"><a href="#">(26910)</a></span>
+					</div>
+				</td>
+				<td class="p-10">
+					<span class="price-color ptrb-5"><h2>₹ 39,999.00</h2 ></span> 
+					<div class="flex-row w-100  ptrb-5">
+						<span class="rating-logo"></span>
+						<span class="link s-14"><a href="#">(9448)</a></span>
+					</div>
+				</td>
+				<td class="p-10">
+					<span class="price-color ptrb-5"><h2>₹ 17,999.00</h2 ></span> 
+					<div class="flex-row w-100  ptrb-5">
+						<span class="rating-logo"></span>
+						<span class="link s-14"><a href="#">(11172)</a></span>
+					</div>
+				</td>
+				<td class="p-10">
+					<span class="price-color ptrb-5"><h2>₹ 41,999.00</h2 ></span> 
+					<div class="flex-row w-100  ptrb-5">
+						<span class="rating-logo"></span>
+						<span class="link s-14"><a href="#">(20433)</a></span>
+					</div>
+				</td>
+			</tr>
+			<tr class="table-border-top-tr s-14">
+				<td  class="p-5 table-first-td">
+					<div class="flex-row flex-align-center">
+						<img src="productimage/camera.svg" style="width: 30px;">
+						<span class="white-space-nowrap">Rear Camera Lens 1</span>
+					</div>
+				</td>
+				<td class="p-5 table-second-td">48 megapixels</td>
+				<td class="p-5">48 megapixels</td>
+				<td class="p-5">64 megapixels</td>
+				<td class="p-5">48</td>
+			</tr>
+			<tr class="table-border-top-tr s-14">
+				<td  class="p-5 table-first-td">
+					<div class="flex-row flex-align-center">
+						<img src="productimage/camera.svg" style="width: 30px;">
+						<span class="white-space-nowrap">Rear Camera Lens 2</span>
+					</div>
+				</td>
+				<td class="p-5 table-second-td">48MP+8MP+16MP</td>
+				<td class="p-5">50MP</td>
+				<td class="p-5">64MP</td>
+				<td class="p-5">Main Camera: Dual LED Flash, Multi Autofocus ( PDAF+CAF) | Front Camera: Fixed Focus, Time Lapse, 1080 video @30 fps</td>
+			</tr>
+			<tr class="table-border-top-tr s-14">
+				<td  class="p-5 table-first-td">
+					<div class="flex-row flex-align-center">
+						<img src="productimage/screensize.svg" style="width: 30px;">
+						<span class="white-space-nowrap">Screen Size</span>
+					</div>
+				</td>
+				<td class="p-5 table-second-td">6.67 in	</td>
+				<td class="p-5">6.55 in	</td>
+				<td class="p-5">6.67 in	</td>
+				<td class="p-5">6.55 in</td>
+			</tr>
+			<tr class="table-border-top-tr s-14">
+				<td  class="p-5 table-first-td">
+					<div class="flex-row flex-align-center">
+						<span class="white-space-nowrap">Screen Type</span>
+					</div>
+				</td>
+				<td class="p-5 table-second-td">AMOLED</td>
+				<td class="p-5">AMOLED</td>
+				<td class="p-5">2400*1800</td>
+				<td class="p-5">AMOLED</td>
+			</tr>
+			<tr class="table-border-top-tr s-14">
+				<td  class="p-5 table-first-td">
+					<div class="flex-row flex-align-center">
+						<img src="productimage/battery.svg" style="width: 30px;">
+						<span class="white-space-nowrap">Battery Power (In mAH)</span>
+					</div>
+				</td>
+				<td class="p-5 table-second-td">4000</td>
+				<td class="p-5">4500</td>
+				<td class="p-5">5020</td>
+				<td class="p-5">4500</td>
+			</tr>
+		</table>
+	</div>
+</div>
+
+	<script>
+		$(document).ready(function(){
+			$("#currentproduct").mouseover(function(){
+				$(this).animate({width:'100%'});
+			});
+			$("#currentproduct").mouseout(function(){
+				$(this).animate({width:'60%'});
+			});
+
+			$("#allproduct img").hover(function(){
+				$("#currentproduct").attr("src",$(this).attr("src"));
+			});
+
+			$("#seemore").click(()=>{
+				$("#seearrow").toggleClass("up");
+				$("#more").slideToggle();
+			});
+		});
+	</script>
+
+
+<script type="text/javascript">
+	//-----------Image zoomin / out ---------------------
+
+	var width=60;
+	var difference=2; 
+	var intervalId=0;
+
+	function increase(){
+		clearInterval(intervalId);
+		intervalId=setInterval(zoomIn,20);
+		// console.log(intervalId);	
+	}
+	function decrease(){
+		clearInterval(intervalId);
+		intervalId=setInterval(zoomOut,20);
+		// console.log(intervalId);	
+	}
+	function zoomIn(){
+		if(width<100){
+			width=width+difference;
+				document.getElementById("currentproduct").style.width=width+'%';
+		}
+		else{
+			clearInterval(intervalId);
+		}
+	}
+	function zoomOut(){
+		if(width>60){
+			width=width-difference;
+				document.getElementById("currentproduct").style.width=width+'%';
+		}
+		else{
+			clearInterval(intervalId);
+		}
+	}
+//---------------Display current image on mouse over----------------
+
+	function displayCurrent(image){
+		document.getElementById("currentproduct").src=image;
+	}
+
+//--------------fade in and fade out--------------------------------
+	var opacity=0;
+	var ointervalId=0;
+
+	function fadeIn(id){
+		clearInterval(ointervalId);
+		ointervalId=setInterval(function(){ show(id); },20);
+	}
+	function fadeOut(id){
+		clearInterval(ointervalId);
+		ointervalId=setInterval(function(){ hide(id); },20);
+	}
+
+	function show(id){
+		// console.log(id);
+		var img = document.getElementById(id);
+		opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+		if(opacity < 1){
+			opacity = opacity + 0.1;
+			img.style.opacity=opacity;
+			console.log(opacity);
+		}
+		else{
+			clearInterval(ointervalId);
+		}
+	}
+	function hide(id){
+		// console.log(id);
+		var img = document.getElementById(id);
+		opacity = Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+		if(opacity > 0){
+			opacity = opacity - 0.1;
+			img.style.opacity=opacity;
+			console.log(opacity);
+		}
+		else{
+			clearInterval(ointervalId);
+		}
+	}
+
+//-----------------------------------------------------------
+function seemore(){
+	let more = window.getComputedStyle(document.getElementById("more")).getPropertyValue("display");
+	if(more == 'none'){
+		document.getElementById("more").style.display='block'
+		document.getElementById("seemsg").innerHTML='See less'
+		document.getElementById("seearrow").classList.add('up');
+		document.getElementById("seearrow").classList.remove('down');
+
+
+	}
+	else{
+		document.getElementById("more").style.display='none'
+				document.getElementById("seemsg").innerHTML='See 3 more'
+			document.getElementById("seearrow").classList.add('down');
+		document.getElementById("seearrow").classList.remove('up');
+
+	}
+}
+
+</script>
+</body>
+</html>
